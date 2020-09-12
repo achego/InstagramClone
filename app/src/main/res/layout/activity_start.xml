@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StartActivity">
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/splashSubText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:text="welcome to"
+        android:layout_above="@id/splashText"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:id="@+id/splashText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="ELJOEWIS"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_25sdp"
+         />
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashText"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/splashRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="register"
+            android:textSize="@dimen/_15sdp"/>
+        <Button
+            android:id="@+id/splashLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="login"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp"/>
+        <Button
+            android:id="@+id/splashnext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="login"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
